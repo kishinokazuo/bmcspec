@@ -1,0 +1,39 @@
+<h3>BMC-Spec Web Site</h3>
+<a href="/specs/new">新しい車両の追加</a>
+<table border="1" cellpadding="2" cellpadding="5">
+  <thead>
+    <tr>
+      <th>削除</th>
+      <th>メーカー</th>
+      <th>車名</th>
+      <th>グレード</th>
+      <th>発売年</th>
+      <th>エンジン気筒数</th>
+      <th>排気量</th>
+      <th>エンジン種別</th>
+      <th>最高出力(kW)</th>
+      <th>発生回転数（rpm）</th>
+      <th>最大トルク(Nm)</th>
+      <th>発生回転数（rpm）</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <% @specs.each do |spec| %>
+      <tr>
+        <td><%= link_to '行削除', "/specs/#{spec.id}", method: :delete %></td>
+        <td><%= spec.Make %></td>
+        <td><%= spec.Model %></td>
+        <td><%= spec.Model_version %></td>
+        <td><%= spec.Years_sold %></td>
+        <td><%= spec.Cylinders %></td>
+        <td><%= spec.Displacement %></td>
+        <td><%= spec.Engine_type %></td>
+        <td><%= spec.Power_kW %></td>
+        <td><%= spec.Power_rpm %></td>
+        <td><%= spec.Torque_Nm %></td>
+        <td><%= spec.Torque_rpm %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

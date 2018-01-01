@@ -1,0 +1,43 @@
+<a href="/specs">一覧に戻る</a>
+<br>
+<div>
+  <%= form_tag('/specs', method: :post) do %>
+    <h3>新しい車両諸元を入力してください</h3>
+
+    <label>メーカー:</label>
+      <input type="text" name="Make">
+      <br>
+    <label>車名:</label>
+      <input type="text" name="Model">
+      <br>
+    <label>グレード:</label>
+      <input type="text" name="Model_version">
+      <br>
+    <label>発売年:</label>
+      <input type="text" name="Years_sold">
+      <br>
+    <label>エンジン気筒数:</label>
+      <input type="text" name="Cylinders">
+      <br>
+    <label>排気量:</label>
+      <input type="text" name="Displacement">
+      <br>
+    <label>エンジン種別:</label>
+      <input type="text" name="Engine_type">
+      <br>
+    <label>最高出力(kW):</label>
+      <input type="text" name="Power_kW">
+      <br>
+    <label>発生回転数（rpm）</label>
+      <input type="text" name="Power_rpm">
+      <br>
+    <label>最大トルク(Nm):</label>
+      <input type="text" name="Torque_Nm">
+      <br>
+    <label>発生回転数（rpm）:</label>
+      <input type="text" name="Torque_rpm">
+      <br>
+
+    <input type="submit" value="登録">
+  <% end %>
+</div>
