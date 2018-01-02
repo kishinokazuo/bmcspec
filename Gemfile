@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
+gem 'rails', '~> 4.2.7.1'
 # Use mysql as the database for Active Record
 gem 'mysql2', '0.3.18'
 # Use SCSS for stylesheets
@@ -47,5 +47,8 @@ end
 
 gem 'pry-rails'
 gem 'compass-rails', '~> 2.0'
-gem 'sprockets', '2.11.0'
+gem 'sprockets', '~> 2.11.3'
 
+group :production, :staging do
+  gem 'rails_12factor'
+end
