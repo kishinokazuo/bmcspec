@@ -1,6 +1,9 @@
-<h3>BMC-Spec Web Site</h3>
-<a href="/specs/new">新しい車両の追加</a>
-<table border="1" cellpadding="2" cellpadding="5">
+<p>
+  ALL Cars List
+  <a class="new_btn" href="/specs/new">新しい車両の追加</a>
+</p>
+
+<table>
   <thead>
     <tr>
       <th>削除</th>
@@ -15,13 +18,12 @@
       <th>発生回転数（rpm）</th>
       <th>最大トルク(Nm)</th>
       <th>発生回転数（rpm）</th>
-
     </tr>
   </thead>
   <tbody>
     <% @specs.each do |spec| %>
       <tr>
-        <td><%= link_to '行削除', "/specs/#{spec.id}", method: :delete %></td>
+        <td><div class="del_btn"><%= link_to 'del', "/specs/#{spec.id}", method: :delete %></div></td>
         <td><%= spec.Make %></td>
         <td><%= spec.Model %></td>
         <td><%= spec.Model_version %></td>

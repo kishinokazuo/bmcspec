@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Bmcspec</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
 
-<%= yield %>
+  <header>
+    <div class="heading">
+      <%= image_tag 'logomark.png' %>
+    </div>
+  </header>
+
+  <div class="contents">
+    <%= yield %>
+  </div>
+
+  <footer>
+    <p>
+      Copyright KK 2018 ~winter homework~
+    </p>
+  </footer>
 
 </body>
+
 </html>

@@ -1,8 +1,8 @@
-<a href="/specs">一覧に戻る</a>
+<a class="del_btn" href="/specs">キャンセル</a>
 <br>
 <div>
   <%= form_tag('/specs', method: :post) do %>
-    <h3>新しい車両の諸元を入力してください</h3>
+    <p>新しい車両の諸元を入力してください</p>
 
     <label>メーカ:</label>
       <input type="text" name="Make">
@@ -38,6 +38,6 @@
       <input type="text" name="Torque_rpm">
       <br>
 
-    <input type="submit" value="登録">
+    <input class="new_btn" type="submit" value="登録">
   <% end %>
 </div>
