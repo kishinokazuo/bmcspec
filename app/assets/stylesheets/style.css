@@ -1,0 +1,113 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f0f0f0
+  font-size: 14px;
+  color: #333;
+  margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+/*----------------------------------------*/
+header {
+  padding: 5px 10px;
+  height: 47px;
+  background-color: skyblue;
+}
+
+.heading {
+  margin: 0 auto;
+}
+
+.contents {
+  background-color: white;
+  margin: 10px;
+}
+
+footer {
+  height: 30px;
+  vertical-align: middle;
+  color: gray;
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+  line-height: 1.5;
+  border-top: 1px solid #000;
+}
+
+table thead th {
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: middle;
+  color: #000;
+  background: #ccc;
+  border-bottom: 1px solid #000;
+}
+
+table th {
+  padding: 10px;
+  border-bottom: 1px solid #000
+}
+
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #000
+}
+
+.title {
+  font-family: sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px skyblue;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+.btn:hover {
+    background: skyblue;
+    color: white;
+}
+
+.new_btn {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: firebrick;
+    border: solid 2px firebrick;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+.new_btn:hover {
+    background: firebrick;
+    color: white;
+}
+
+.del_btn {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #gray;
+    border: solid 2px gray;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+.del_btn:hover {
+    background: gray;
+    color: white;
+}
