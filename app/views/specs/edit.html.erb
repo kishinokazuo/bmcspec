@@ -1,0 +1,42 @@
+
+  <a class="btn" href="/specs">一覧に戻る</a>
+  <div class="btn">
+    <%= link_to '詳細ページに戻る', "/specs/show/#{@edit_spec.id}" %>
+  </div>
+  <p>編集する</p>
+<%= form_tag("/specs/#{@edit_spec.id}/edit", method: :patch) do %>
+  <label>メーカ:</label>
+    <input type="text" name="Make" value="<%= @edit_spec.Make %>" autofocus="true">
+    <br>
+  <label>車名:</label>
+    <input type="text" name="Model" value="<%= @edit_spec.Model %>">
+    <br>
+  <label>グレード:</label>
+    <input type="text" name="Make" value="<%= @edit_spec.Model_version %>" autofocus="true">
+    <br>
+  <label>発売年:</label>
+    <input type="text" name="Make" value="<%= @edit_spec.Years_sold %>" autofocus="true">
+    <br>
+  <label>エンジン気筒数:</label>
+    <input type="text" name="Make" value="<%= @edit_spec.Cylinders %>" autofocus="true">
+    <br>
+  <label>排気量:</label>
+    <input type="text" name="Make" value="<%= @edit_spec.Displacement %>" autofocus="true">
+    <br>
+  <label>エンジン種別:</label>
+    <input type="text" name="Make" value="<%= @edit_spec.Engine_type %>" autofocus="true">
+    <br>
+  <label>最高出力(kW):</label>
+    <input type="text" name="Make" value="<%= @edit_spec.Power_kW %>" autofocus="true">
+    <br>
+  <label>発生回転数（rpm）</label>
+    <input type="text" name="Make" value="<%= @edit_spec.Power_rpm %>" autofocus="true">
+    <br>
+  <label>最大トルク(Nm):</label>
+    <input type="text" name="Make" value="<%= @edit_spec.Torque_Nm %>" autofocus="true">
+    <br>
+  <label>発生回転数（rpm）:</label>
+    <input type="text" name="Make" value="<%= @edit_spec.Torque_rpm %>" autofocus="true">
+    <br>
+  <input class="new_btn" type="submit" value="登録内容を更新する">
+<% end %>

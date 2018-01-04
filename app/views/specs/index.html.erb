@@ -23,7 +23,9 @@
   <tbody>
     <% @specs.each do |spec| %>
       <tr>
-        <td><div class="del_btn"><%= link_to '削除', "/specs/#{spec.id}", method: :delete %></div></td>
+        <td>
+          <div class="btn"><%= link_to '詳細', "/specs/show/#{spec.id}", method: :get %></div>
+        </td>
         <td><%= spec.Make %></td>
         <td><%= spec.Model %></td>
         <td><%= spec.Model_version %></td>

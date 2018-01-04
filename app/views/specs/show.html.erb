@@ -1,0 +1,51 @@
+  <a class="btn" href="/specs">一覧に戻る</a>
+  <p>ID=<%= @spec.id %>の詳細画面。ここで編集と削除をできるようにしたい</p>
+  <div class="del_btn"><%= link_to '削除', "/specs/#{@spec.id}", method: :delete %></div>
+  <div class="new_btn"><%= link_to '編集', "/specs/#{@spec.id}/edit", method: :get %></div>
+  <p></p>
+<table>
+  <tr>
+    <td>メーカー</td>
+    <td><%= @spec.Make %></td>
+  </tr>
+  <tr>
+    <td>車名</td>
+    <td><%= @spec.Model %></td>
+  </tr>
+  <tr>
+    <td>グレード</td>
+    <td><%= @spec.Model_version %></td>
+  </tr>
+  <tr>
+    <td>発売年</td>
+    <td><%= @spec.Years_sold %></td>
+  </tr>
+  <tr>
+    <td>エンジン気筒数</td>
+    <td><%= @spec.Cylinders %></td>
+  </tr>
+  <tr>
+    <td>排気量</td>
+    <td><%= @spec.Displacement %></td>
+  </tr>
+  <tr>
+    <td>エンジン種別</td>
+    <td><%= @spec.Engine_type %></td>
+  </tr>
+  <tr>
+    <td>最高出力(kW)</td>
+    <td><%= @spec.Power_kW %></td>
+  </tr>
+  <tr>
+    <td>発生回転数（rpm）</td>
+    <td><%= @spec.Power_rpm %></td>
+  </tr>
+  <tr>
+    <td>最大トルク(Nm)</td>
+    <td><%= @spec.Torque_Nm %></td>
+  </tr>
+  <tr>
+    <td>発生回転数（rpm）</td>
+    <td><%= @spec.Torque_rpm %></td>
+  </tr>
+</table>
