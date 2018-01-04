@@ -39,6 +39,7 @@ footer {
 
 table {
   border-collapse: collapse;
+  font-size: 14px;
   text-align: left;
   line-height: 1.5;
   border-top: 1px solid #000;

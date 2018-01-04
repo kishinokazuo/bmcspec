@@ -1,7 +1,7 @@
 class SpecsController < ApplicationController
 
   def index
-    @specs = Spec.all.order("id DESC")
+    @specs = Spec.all.order("id DESC").page(params[:page]).per(20)
   end
 
   def new
